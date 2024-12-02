@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Space Grotesk-Variable";
+  src: url("/fonts/SpaceGrotesk-Variable.ttf");
+}
+
+$main-color1 : #B9FF66;
+$main-color2 : #191A23;
+$main-color3 : #F3F3F3;
+
+@mixin border-radius {
+  border-radius: 2.81rem;
+}
+
+@mixin content-center() {
+  width: clamp(390px, 100vw, 1240px);
+  margin: 0 auto;
+}
+
+@mixin Ag-h3 {
+  font-size: clamp(1.625rem, 1.5166rem + 0.4624vw, 1.875rem);;
+  font-weight: 450;
+}
+@mixin Ag-p {
+  font-size: clamp(1rem, 0.9458rem + 0.2312vw, 1.125rem);
+  font-weight: 100;
+}
+
+@mixin black-button {
+  background-color: $main-color2;
+  width: 288px;
+  height: 68px;
+  color: white;
+  border: none;
+  border-radius: 14px;
+}
+
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'mobile' {
+    @media (max-width: 480px) { @content; }
+  }
+  @else if $breakpoint == 'landscape' {
+    @media (min-width: 481px) and (max-width: 767px) { @content; }
+  }
+  @else if $breakpoint == 'tablets' {
+    @media (min-width: 768px) and (max-width: 1030px) { @content; }
+  }
+  @else if $breakpoint == 'sm desktop' {
+    @media (min-width: 1030px) and (max-width: 1250px) { @content; }
+  }
+}

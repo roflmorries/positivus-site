@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Regular.ttf");
+}
+@font-face {
+  font-family: "Space Grotesk-Variable";
+  src: url("/fonts/SpaceGrotesk-Variable.ttf");
+}
+@media (max-width: 480px) {
+  .wrapper {
+    width: 390px;
+  }
+}
+
+/*# sourceMappingURL=adaptation.css.map */
