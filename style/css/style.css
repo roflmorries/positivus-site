@@ -1285,7 +1285,7 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
     margin-bottom: 30px;
   }
   body .wrapper .testimonials-block__item .testimonials__items .testimonials-item__message .testimonials-message__upper {
-    background: url("/images/pics/mobile-union.svg");
+    background: url("images/pics/mobile-union.svg");
     width: 330px;
     height: 326px;
   }
@@ -1490,7 +1490,7 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
     width: 100%;
   }
   .testimonials__block .testimonials-block__item .testimonials__items .testimonials-item__message .testimonials-message__upper {
-    background: url("/images/pics/mobile-union.svg");
+    background: url("images/pics/mobile-union.svg");
     width: 330px;
     height: 326px;
   }
