@@ -231,6 +231,7 @@ html {
   }
 }
 
+
 .services-block__title {
   display: flex;
   align-items: center;
@@ -688,7 +689,7 @@ main {
       .feedback__form-input {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
         label {
           font-weight: 300;
           font-size: 1rem;

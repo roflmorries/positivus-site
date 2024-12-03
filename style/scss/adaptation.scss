@@ -374,10 +374,12 @@
     .services-item__title {
       font-size: 24px;
       text-align: center;
+      white-space: nowrap;
     }
     .services-block__description {
       .services-description__item {
         font-size: 12px;
+        width: 75%;
       }
     }
   }
@@ -423,7 +425,7 @@
   }
   .process__content {
     .process-content__items {
-      height: 100px;
+      height: clamp(5.625rem, 3.497vw + 4.574rem, 6.25rem);
       .process__item {
         .process__items {
           width: 85vw;
@@ -439,9 +441,32 @@
       .team-content__block {
         width: 100%;
         justify-content: center;
-        gap: 50px;
+        gap: clamp(1.563rem, 8.741vw - 1.065rem, 3.125rem);
         .team-content__item {
-          width: 70vw;
+          width: 45%;
+          max-height: 35%;
+          .team-content__upper {
+            width: 80%;
+            .team-upper-image {
+              img {
+                width: clamp(5rem, 8.392vw + 2.477rem, 6.5rem);
+              }
+            }
+            .team-content__description {
+              .team-item__icon {
+                width: 24px;
+              }
+              .team-item__name {
+                font-size: clamp(1rem, 0.3693rem + 2.0979vw, 1.375rem);              }
+              .team-item__description {
+                font-size: clamp(0.75rem, 0.3295rem + 1.3986vw, 1rem);              }
+            }
+          }
+          .team-content__lower {
+            width: 80%;
+            .team-content__description {
+              font-size: clamp(0.75rem, 0.3295rem + 1.3986vw, 1rem);            }
+          }
         }
       }
     }
@@ -555,14 +580,35 @@
         .nav_item--modified {
           //display: none;
           width: clamp(9.375rem, 43.478vw - 12.364rem, 15.625rem);
+          height: clamp(2.813rem, 9.542vw - 1.768rem, 4.375rem);
         }
       }
+    }
+  }
+  .features__block {
+    .features-block__content {
+      margin: 0 auto;
+      width: 100vw;
+      .features-block__title {
+        width: 80%;
+      }
+      .features-block__image--sm {
+        display: block;
+
+        width: 100%;
+      }
+      .features-block__button {
+        width: 100%;
+      }
+    }
+    .features-block__image {
+      display: none;
     }
   }
   .brand-block_content {
     .brand-block__item {
       img {
-        width: 100px;
+        width: clamp(6.25rem, 9.542vw + 1.67rem, 7.813rem);
       }
     }
   }
@@ -570,6 +616,7 @@
     .services-item__title {
       font-size: 32px;
       text-align: center;
+      white-space: nowrap;
     }
     .services-block__description {
       font-size: 16px;
@@ -625,10 +672,17 @@
     .team-content__blocks {
       .team-content__block {
         width: 100%;
-        justify-content: center;
-        gap: clamp(0rem, 19.565vw - 9.783rem, 2.813rem);
+        justify-content: space-around;
+        align-content: space-around;
+        //gap: clamp(0rem, 19.565vw - 9.783rem, 2.813rem);
         .team-content__item {
-          width: 380px;
+          width: 45%;
+          .team-content__upper {
+            width: 80%;
+          }
+          .team-content__lower {
+            width: 80%;
+          }
         }
       }
     }
@@ -640,29 +694,14 @@
       }
     }
   }
-  .features__block {
-    .features-block__content {
-      margin: 0 auto;
-      width: 100vw;
-      .features-block__image--sm {
-        display: block;
-
-        width: 80%;
-      }
-      .features-block__button {
-        width: 100%;
-      }
-    }
-    .features-block__image {
-      display: none;
-    }
-  }
 }
 .footer {
   .footer__content {
     width: 90%;
     .footer-nav__content {
       gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
       .footer__nav {
         ul {
           gap: 22px;
@@ -673,6 +712,12 @@
           }
         }
       }
+    }
+    .footer__policy {
+      .footer-policy_description {
+        font-size: clamp(0.75rem, 0.1193rem + 2.0979vw, 1.125rem);      }
+      .footer-policy__link {
+        font-size: clamp(0.75rem, 0.1193rem + 2.0979vw, 1.125rem);      }
     }
   }
 }

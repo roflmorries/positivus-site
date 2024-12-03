@@ -51,6 +51,6 @@ $main-color3 : #F3F3F3;
     @media (min-width: 768px) and (max-width: 1030px) { @content; }
   }
   @else if $breakpoint == 'sm desktop' {
-    @media (min-width: 1030px) and (max-width: 1250px) { @content; }
+    @media (min-width: 1030px) and (max-width: 1237px) { @content; }
   }
 }
