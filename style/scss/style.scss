@@ -1,5 +1,5 @@
-@import "normalize";
-@import "config";
+@import "./normalize";
+@import "./config";
 
 html {
   font-family: "Space Grotesk-Variable", sans-serif;
@@ -61,7 +61,6 @@ html {
         position: absolute;
         top: 50%;
         display: block;
-        // transform: translate(-50%, -50%);
         transition: 0.3s ease;
       }
 
@@ -163,13 +162,10 @@ html {
 .features__block {
   display: flex;
   justify-content: space-between;
-  //align-items: center;
   margin-top: clamp(2.5rem, 3.529vw + 1.64rem, 4.375rem);
 }
 .features-block__content {
   width: 33.18rem;
-  //height: 33.5rem;
-
 
   .features-block__title {
     font-size: clamp(2.625rem, 2.1373rem + 2.0809vw, 3.75rem);
@@ -203,18 +199,12 @@ html {
     font-weight: 300;
   }
   .features-block__button:hover {
-    border: 1px solid $main-color2;
-    background-color: $main-color3;
-    color: $main-color2;
-    transition: 0.3s;
+    @include hover-button;
   }
   .features-block__image {
     padding-left: clamp(0rem, 13.873vw - 3.251rem, 7.5rem);
     max-width: clamp(22.563rem, 27.63vw + 16.087rem, 37.5rem);
   }
-}
-.features-block__content > *:nth-last-child(1) {
-  //flex-basis: 55%;
 }
 
 .brands__block {
@@ -250,7 +240,6 @@ html {
   }
   .services-block__description {
     width: 36.25rem;
-    //line-height: 1.2;
     @include Ag-p
   }
 }
@@ -402,6 +391,9 @@ html {
       font-size: 20px;
       font-weight: 300;
     }
+    .contact-block__button:hover {
+      @include hover-button
+    }
   }
 }
 
@@ -518,9 +510,11 @@ html {
   .team-block__item {
     @include black-button;
     align-items: center;
-    margin-top: 2.5rem;
     font-size: 1.25rem;
     font-weight: 300;
+  }
+  .team-block__item:hover {
+    @include hover-button;
   }
 }
 
@@ -609,23 +603,15 @@ main {
         align-items: center;
         width: 37.87rem;
         height: 16.62rem;
-        //border: 1px solid $main-color1;
         background-image: url("/images/pics/Bubble.svg");
         @include border-radius;
         .message-upper__description {
           color: white;
           width: 31.37rem;
+          @include Ag-p;
+          padding-bottom: 25px;
         }
       }
-      //.testimonials-message__upper:after {
-      //  content: '';
-      //  position: absolute;
-      //
-      //  left: 50%;
-      //  width: 20px;
-      //  height: 10px;
-      //  border: 1px solid $main-color1;
-      //}
       .testimonials-message__lower {
         margin-left: clamp(4.063rem, 2.081vw + 3.575rem, 5.188rem);
         margin-top: 1.2rem;
@@ -644,7 +630,6 @@ main {
 .testimonials-block__selectors {
   display: flex;
   justify-content: space-between;
-  //margin-top: 150px;
   width: 37.87rem;
 }
 
@@ -728,6 +713,9 @@ main {
       width: 100%;
       font-size: 1.25rem;
       font-weight: 300;
+    }
+    .feedback-item__button:hover {
+      @include hover-button;
     }
   }
 }
@@ -820,6 +808,12 @@ main {
           color: $main-color2;
           border: none;
           font-size: 1.25rem;
+        }
+        .feedback-item__button:hover {
+          background-color: #292A32;
+          border: 1px solid $main-color1;
+          color: $main-color1;
+          transition: 0.4s ease;
         }
       }
     }

@@ -506,10 +506,10 @@ html {
   font-weight: 300;
 }
 .features-block__content .features-block__button:hover {
-  border: 1px solid #191A23;
   background-color: #F3F3F3;
   color: #191A23;
-  transition: 0.3s;
+  border: 1px solid #191A23;
+  transition: 0.4s ease;
 }
 .features-block__content .features-block__image {
   padding-left: clamp(0rem, 13.873vw - 3.251rem, 7.5rem);
@@ -695,6 +695,12 @@ html {
   font-size: 20px;
   font-weight: 300;
 }
+.contact__block .contact-block__content .contact-block__button:hover {
+  background-color: #F3F3F3;
+  color: #191A23;
+  border: 1px solid #191A23;
+  transition: 0.4s ease;
+}
 
 .case-studies__content {
   display: flex;
@@ -808,9 +814,14 @@ html {
   border: none;
   border-radius: 14px;
   align-items: center;
-  margin-top: 2.5rem;
   font-size: 1.25rem;
   font-weight: 300;
+}
+.team-block__button .team-block__item:hover {
+  background-color: #F3F3F3;
+  color: #191A23;
+  border: 1px solid #191A23;
+  transition: 0.4s ease;
 }
 
 .team-content__item {
@@ -887,12 +898,15 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
   align-items: center;
   width: 37.87rem;
   height: 16.62rem;
-  background-image: url("../images/pics/Bubble.svg");
+  background-image: url("/images/pics/Bubble.svg");
   border-radius: 2.81rem;
 }
 .testimonials-block__item .testimonials__items .testimonials-item__message .testimonials-message__upper .message-upper__description {
   color: white;
   width: 31.37rem;
+  font-size: clamp(1rem, 0.9458rem + 0.2312vw, 1.125rem);
+  font-weight: 100;
+  padding-bottom: 25px;
 }
 .testimonials-block__item .testimonials__items .testimonials-item__message .testimonials-message__lower {
   margin-left: clamp(4.063rem, 2.081vw + 3.575rem, 5.188rem);
@@ -957,7 +971,7 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
 .feedback-block__container .feedback-block__item .feedback__input-group .feedback__form-input {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 .feedback-block__container .feedback-block__item .feedback__input-group .feedback__form-input label {
   font-weight: 300;
@@ -998,6 +1012,12 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
   width: 100%;
   font-size: 1.25rem;
   font-weight: 300;
+}
+.feedback-block__container .feedback-block__item .feedback-item__button:hover {
+  background-color: #F3F3F3;
+  color: #191A23;
+  border: 1px solid #191A23;
+  transition: 0.4s ease;
 }
 
 .footer__wrapper {
@@ -1096,6 +1116,12 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
   color: #191A23;
   border: none;
   font-size: 1.25rem;
+}
+.footer .footer__content .footer_contact-form .footer__form-input .feedback-item__button:hover {
+  background-color: #292A32;
+  border: 1px solid #B9FF66;
+  color: #B9FF66;
+  transition: 0.4s ease;
 }
 .footer .footer__content .footer__media--mb {
   display: none;
@@ -1285,7 +1311,7 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
     margin-bottom: 30px;
   }
   body .wrapper .testimonials-block__item .testimonials__items .testimonials-item__message .testimonials-message__upper {
-    background-image: url("../images/pics/mobile-union.svg");
+    background-image: url("/images/pics/mobile-union.svg");
     width: 330px;
     height: 326px;
   }
@@ -1436,9 +1462,11 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
   .services-block__title .services-item__title {
     font-size: 24px;
     text-align: center;
+    white-space: nowrap;
   }
   .services-block__title .services-block__description .services-description__item {
     font-size: 12px;
+    width: clamp(25rem, -69.93vw + 46.023rem, 12.5rem);
   }
   .services__block .service-block__cards .service-block__wrapper {
     flex-wrap: wrap;
@@ -1470,7 +1498,7 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
     font-size: 16px;
   }
   .process__content .process-content__items {
-    height: 100px;
+    height: clamp(5.625rem, 3.497vw + 4.574rem, 6.25rem);
   }
   .process__content .process-content__items .process__item .process__items {
     width: 85vw;
@@ -1481,16 +1509,39 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
   .team__content .team-content__blocks .team-content__block {
     width: 100%;
     justify-content: center;
-    gap: 50px;
+    gap: clamp(1.563rem, 8.741vw - 1.065rem, 3.125rem);
   }
   .team__content .team-content__blocks .team-content__block .team-content__item {
-    width: 70vw;
+    width: 45%;
+    max-height: 35%;
+  }
+  .team__content .team-content__blocks .team-content__block .team-content__item .team-content__upper {
+    width: 80%;
+  }
+  .team__content .team-content__blocks .team-content__block .team-content__item .team-content__upper .team-upper-image img {
+    width: clamp(5rem, 8.392vw + 2.477rem, 6.5rem);
+  }
+  .team__content .team-content__blocks .team-content__block .team-content__item .team-content__upper .team-content__description .team-item__icon {
+    width: 24px;
+  }
+  .team__content .team-content__blocks .team-content__block .team-content__item .team-content__upper .team-content__description .team-item__name {
+    font-size: clamp(1rem, 0.3693rem + 2.0979vw, 1.375rem);
+  }
+  .team__content .team-content__blocks .team-content__block .team-content__item .team-content__upper .team-content__description .team-item__description {
+    font-size: clamp(0.75rem, 0.3295rem + 1.3986vw, 1rem);
+  }
+  .team__content .team-content__blocks .team-content__block .team-content__item .team-content__lower {
+    width: 80%;
+  }
+  .team__content .team-content__blocks .team-content__block .team-content__item .team-content__lower .team-content__description {
+    font-size: clamp(0.75rem, 0.3295rem + 1.3986vw, 1rem);
   }
   .team__content .team-block__button .team-block__item {
     width: 100%;
+    margin-top: 1rem;
   }
   .testimonials__block .testimonials-block__item .testimonials__items .testimonials-item__message .testimonials-message__upper {
-    background-image: url("images/pics/mobile-union.svg");
+    background: url("/images/pics/mobile-union.svg");
     width: 330px;
     height: 326px;
   }
@@ -1511,7 +1562,7 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
     width: 90vw;
   }
   .footer__wrapper .footer .footer__content .footer-nav__content .footer__logo img {
-    width: 150px;
+    width: clamp(7.5rem, 10.49vw + 4.347rem, 9.375rem);
   }
   .footer__wrapper .footer .footer__content .footer-nav__content .footer__nav ul {
     gap: 17px;
@@ -1561,13 +1612,32 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
   }
   .header .header__nav ul .nav_item--modified {
     width: clamp(9.375rem, 43.478vw - 12.364rem, 15.625rem);
+    height: clamp(2.813rem, 9.542vw - 1.768rem, 4.375rem);
+  }
+  .features__block .features-block__content {
+    margin: 0 auto;
+    width: 100vw;
+  }
+  .features__block .features-block__content .features-block__title {
+    width: 80%;
+  }
+  .features__block .features-block__content .features-block__image--sm {
+    display: block;
+    width: 100%;
+  }
+  .features__block .features-block__content .features-block__button {
+    width: 100%;
+  }
+  .features__block .features-block__image {
+    display: none;
   }
   .brand-block_content .brand-block__item img {
-    width: 100px;
+    width: clamp(6.25rem, 9.542vw + 1.67rem, 7.813rem);
   }
   .services-block__title .services-item__title {
     font-size: 32px;
     text-align: center;
+    white-space: nowrap;
   }
   .services-block__title .services-block__description {
     font-size: 16px;
@@ -1579,10 +1649,20 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
     width: auto;
   }
   .services__block .service-block__cards .card_item__title .card_title__item .card_block__image {
-    display: none;
+    position: relative;
+    left: clamp(-3.125rem, 3.817vw - 4.957rem, -2.5rem);
+  }
+  .services__block .service-block__cards .card_item__title .card_title__item .card_block__image img {
+    width: clamp(6.25rem, 30.534vw - 8.406rem, 11.25rem);
   }
   .contact__block {
     height: 400px;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .contact__block .contact-block__content {
+    width: 35%;
   }
   .contact__block .contact-block__content .contact-block__button {
     width: 80%;
@@ -1590,10 +1670,10 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
     height: 60px;
   }
   .case-studies__content .case-content__item .case-content__description {
-    font-size: 14px;
+    font-size: clamp(0.75rem, 0.3836rem + 0.7634vw, 0.875rem);
   }
   .case-studies__content .case-content__item .case-content__link {
-    font-size: 16px;
+    font-size: clamp(0.75rem, 0.3836rem + 0.7634vw, 0.875rem);
   }
   .process__content .process-content__items {
     height: 120px;
@@ -1606,27 +1686,22 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
   }
   .team__content .team-content__blocks .team-content__block {
     width: 100%;
-    justify-content: center;
-    gap: clamp(0rem, 19.565vw - 9.783rem, 2.813rem);
+    justify-content: space-around;
+    align-content: space-around;
   }
   .team__content .team-content__blocks .team-content__block .team-content__item {
-    width: 380px;
+    width: 45%;
   }
-  .feedback__block .feedback-block__container .feedback-block__image {
-    display: none;
-  }
-  .features__block .features-block__content {
-    margin: 0 auto;
-    width: 100vw;
-  }
-  .features__block .features-block__content .features-block__image--sm {
-    display: block;
+  .team__content .team-content__blocks .team-content__block .team-content__item .team-content__upper {
     width: 80%;
   }
-  .features__block .features-block__content .features-block__button {
-    width: 100%;
+  .team__content .team-content__blocks .team-content__block .team-content__item .team-content__lower {
+    width: 80%;
   }
-  .features__block .features-block__image {
+  .team__content .team-block__button .team-block__item {
+    margin-top: 0;
+  }
+  .feedback__block .feedback-block__container .feedback-block__image {
     display: none;
   }
 }
@@ -1636,14 +1711,23 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
 .footer .footer__content .footer-nav__content {
   gap: 12px;
 }
+.footer .footer__content .footer-nav__content .footer__logo img {
+  width: 145px;
+}
 .footer .footer__content .footer-nav__content .footer__nav ul {
   gap: 22px;
 }
 .footer .footer__content .footer-nav__content .footer__nav ul .header__nav_item a {
   font-size: 14px;
 }
+.footer .footer__content .footer__policy .footer-policy_description {
+  font-size: clamp(0.75rem, 0.1193rem + 2.0979vw, 1.125rem);
+}
+.footer .footer__content .footer__policy .footer-policy__link {
+  font-size: clamp(0.75rem, 0.1193rem + 2.0979vw, 1.125rem);
+}
 
-@media (min-width: 1030px) and (max-width: 1250px) {
+@media (min-width: 1030px) and (max-width: 1237px) {
   .service-block__cards .service-block__wrapper .card_block__item .card_item__title {
     width: 350px;
   }

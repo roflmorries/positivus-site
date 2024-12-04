@@ -38,6 +38,12 @@ $main-color3 : #F3F3F3;
   border: none;
   border-radius: 14px;
 }
+@mixin hover-button {
+  background-color: $main-color3;
+  color: $main-color2;
+  border: 1px solid $main-color2;
+  transition: 0.4s ease;
+}
 
 
 @mixin respond-to($breakpoint) {

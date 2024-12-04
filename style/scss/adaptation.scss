@@ -5,7 +5,6 @@
     .wrapper {
       width: 390px;
       margin: 0 auto;
-      //background: pink;
       .header {
         max-width: 390px;
       }
@@ -40,7 +39,6 @@
       .brand-block_content {
         flex-wrap: wrap;
         .brand-block__item {
-          //padding-left: 10px;
           margin-bottom: 20px;
         }
       }
@@ -83,11 +81,6 @@
       }
       .service-block__wrapper {
         flex-wrap: wrap;
-        .card_block__item {
-          .card_block__image {
-            //margin-top: 6.25rem;
-          }
-        }
       }
       .card_block__item {
         max-width: 390px;
@@ -133,7 +126,6 @@
         gap: 1.25rem;
         border-radius: 0;
         justify-content: start;
-        //margin-top: 1.25rem;
         .case-content__item {
           background-color: $main-color2;
           height: 16rem;
@@ -141,7 +133,6 @@
           display: flex;
           flex-direction: column;
           padding: 0 50px 0 50px;
-          //align-items: center;
           justify-content: center;
           @include border-radius;
           .case-content__description {
@@ -158,9 +149,6 @@
             height: 6.12rem;
             .process-item_title {
               width: 280px;
-            }
-            .process-item__icon {
-              //padding-left: 30px;
             }
           }
           .process-item__definition {
@@ -190,7 +178,7 @@
         .testimonials__items {
           .testimonials-item__message {
             .testimonials-message__upper {
-              background-image: url("images/pics/mobile-union.svg");
+              background-image: url("/images/pics/mobile-union.svg");
               width: 330px;
               height: 326px;
               .message-upper__description {
@@ -210,7 +198,6 @@
       }
       .feedback-block__container {
         height: 440px;
-        //margin-top: 100px;
         padding-top: 130px;
         .feedback-block__item {
           margin-left: 30px;
@@ -340,7 +327,6 @@
         }
         .nav_item--modified {
           display: none;
-          //width: clamp(9.375rem, 43.478vw - 12.364rem, 15.625rem);
         }
       }
     }
@@ -379,7 +365,7 @@
     .services-block__description {
       .services-description__item {
         font-size: 12px;
-        width: 75%;
+        width: clamp(25rem, -69.93vw + 46.023rem, 12.5rem);
       }
     }
   }
@@ -395,10 +381,6 @@
 
             .card_title__item {
               width: auto;
-
-              .card_block__image {
-                //display: none;
-              }
             }
           }
         }
@@ -473,6 +455,7 @@
     .team-block__button {
       .team-block__item {
         width: 100%;
+        margin-top: 1rem;
       }
     }
   }
@@ -513,7 +496,7 @@
         .footer-nav__content {
           .footer__logo {
             img {
-              width: 150px;
+              width: clamp(7.5rem, 10.49vw + 4.347rem, 9.375rem);
             }
           }
           .footer__nav {
@@ -578,7 +561,6 @@
             font-size: clamp(1rem, 0.2596rem + 1.5385vw, 1.25rem);          }
         }
         .nav_item--modified {
-          //display: none;
           width: clamp(9.375rem, 43.478vw - 12.364rem, 15.625rem);
           height: clamp(2.813rem, 9.542vw - 1.768rem, 4.375rem);
         }
@@ -629,7 +611,11 @@
         .card_title__item {
           width: auto;
           .card_block__image {
-            display: none;
+            position: relative;
+            left: clamp(-3.125rem, 3.817vw - 4.957rem, -2.5rem);
+            img {
+              width: clamp(6.25rem, 30.534vw - 8.406rem, 11.25rem);
+            }
           }
         }
       }
@@ -637,7 +623,11 @@
   }
   .contact__block {
     height: 400px;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
     .contact-block__content {
+      width: 35%;
       .contact-block__button {
         width: 80%;
         font-size: 16px;
@@ -648,11 +638,9 @@
   .case-studies__content {
     .case-content__item {
       .case-content__description {
-        font-size: 14px;
-      }
+        font-size: clamp(0.75rem, 0.3836rem + 0.7634vw, 0.875rem);      }
       .case-content__link {
-        font-size: 16px;
-      }
+        font-size: clamp(0.75rem, 0.3836rem + 0.7634vw, 0.875rem);      }
     }
   }
   .process__content {
@@ -674,7 +662,6 @@
         width: 100%;
         justify-content: space-around;
         align-content: space-around;
-        //gap: clamp(0rem, 19.565vw - 9.783rem, 2.813rem);
         .team-content__item {
           width: 45%;
           .team-content__upper {
@@ -684,6 +671,11 @@
             width: 80%;
           }
         }
+      }
+    }
+    .team-block__button {
+      .team-block__item {
+        margin-top: 0;
       }
     }
   }
@@ -700,8 +692,11 @@
     width: 90%;
     .footer-nav__content {
       gap: 12px;
-      flex-wrap: wrap;
-      justify-content: center;
+      .footer__logo {
+        img {
+          width: 145px;
+        }
+      }
       .footer__nav {
         ul {
           gap: 22px;
