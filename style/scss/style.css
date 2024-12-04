@@ -309,11 +309,11 @@ template {
 
 @font-face {
   font-family: "Space Grotesk";
-  src: url("fonts/SpaceGrotesk-Regular.ttf");
+  src: url("./fonts/SpaceGrotesk-Regular.ttf");
 }
 @font-face {
   font-family: "Space Grotesk-Variable";
-  src: url("fonts/SpaceGrotesk-Variable.ttf");
+  src: url("./fonts/SpaceGrotesk-Variable.ttf");
 }
 html {
   font-family: "Space Grotesk-Variable", sans-serif;
