@@ -156,7 +156,9 @@
           }
         }
       }
-
+      .team__content {
+        margin-bottom: 30px;
+      }
       .team-content__blocks {
 
         .team-content__block {
@@ -287,6 +289,7 @@
         }
       }
       .footer {
+        margin-top: 200px;
         .footer__content {
           .footer__media--mb {
             display: flex;

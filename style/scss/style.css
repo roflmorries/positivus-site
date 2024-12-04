@@ -1296,6 +1296,9 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
   body .wrapper .process-content__items .process__item .process-item__definition {
     width: 75vw;
   }
+  body .wrapper .team__content {
+    margin-bottom: 30px;
+  }
   body .wrapper .team-content__blocks .team-content__block {
     flex-wrap: wrap;
     flex-direction: column;
@@ -1405,6 +1408,9 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
   }
   body .footer__wrapper .footer_contact-form .footer__form-input .feedback-item__button {
     width: 100% !important;
+  }
+  body .footer__wrapper .footer {
+    margin-top: 200px;
   }
   body .footer__wrapper .footer .footer__content .footer__media--mb {
     display: flex;
