@@ -302,6 +302,13 @@
             gap: 0.93rem;
             padding: 2.31rem 0 2.31rem 0;
           }
+          .footer_contact-form {
+            .footer__form-input {
+              .feedback-item__button {
+                font-weight: 350;
+              }
+            }
+          }
         }
       }
     }

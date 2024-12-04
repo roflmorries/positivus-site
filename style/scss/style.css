@@ -1423,6 +1423,9 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
     gap: 0.93rem;
     padding: 2.31rem 0 2.31rem 0;
   }
+  body .footer__wrapper .footer .footer__content .footer_contact-form .footer__form-input .feedback-item__button {
+    font-weight: 350;
+  }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .wrapper {
