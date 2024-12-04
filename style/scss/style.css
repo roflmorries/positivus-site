@@ -1108,6 +1108,9 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
 .footer .footer__content .footer_contact-form .footer__form-input input::placeholder {
   color: white;
 }
+.footer .footer__content .footer_contact-form .footer__form-input input {
+  color: white;
+}
 .footer .footer__content .footer_contact-form .footer__form-input .feedback-item__button {
   width: 15.56rem;
   height: 4.25rem;
