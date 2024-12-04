@@ -1290,7 +1290,7 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
     border-bottom: 7px solid #191A23;
   }
   body .wrapper .process-content__items .process__item .process__items {
-    width: 75vw;
+    width: 80%;
     height: 6.12rem;
     justify-content: space-between;
   }
@@ -1304,7 +1304,7 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
     font-weight: 450;
   }
   body .wrapper .process-content__items .process__item .process-item__definition {
-    width: 75vw;
+    width: 80%;
   }
   body .wrapper .team__content {
     margin-bottom: 30px;
