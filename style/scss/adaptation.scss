@@ -147,8 +147,15 @@
           .process__items {
             width: 75vw ;
             height: 6.12rem;
+            justify-content: space-between;
             .process-item_title {
               width: 280px;
+              .process-item__num {
+                font-weight: 500;
+              }
+              .process-item__description {
+                font-weight: 450;
+              }
             }
           }
           .process-item__definition {

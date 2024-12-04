@@ -1292,9 +1292,16 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
   body .wrapper .process-content__items .process__item .process__items {
     width: 75vw;
     height: 6.12rem;
+    justify-content: space-between;
   }
   body .wrapper .process-content__items .process__item .process__items .process-item_title {
     width: 280px;
+  }
+  body .wrapper .process-content__items .process__item .process__items .process-item_title .process-item__num {
+    font-weight: 500;
+  }
+  body .wrapper .process-content__items .process__item .process__items .process-item_title .process-item__description {
+    font-weight: 450;
   }
   body .wrapper .process-content__items .process__item .process-item__definition {
     width: 75vw;
