@@ -309,11 +309,11 @@ template {
 
 @font-face {
   font-family: "Space Grotesk";
-  src: url("fonts/SpaceGrotesk-Regular.ttf");
+  src: url("../../fonts/SpaceGrotesk-Regular.ttf");
 }
 @font-face {
   font-family: "Space Grotesk-Variable";
-  src: url("fonts/SpaceGrotesk-Variable.ttf");
+  src: url("../../fonts/SpaceGrotesk-Variable.ttf");
 }
 html {
   font-family: "Space Grotesk-Variable", sans-serif;
@@ -898,7 +898,7 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
   align-items: center;
   width: 37.87rem;
   height: 16.62rem;
-  background-image: url("/images/pics/Bubble.svg");
+  background-image: url("../../images/pics/Bubble.svg");
   border-radius: 2.81rem;
 }
 .testimonials-block__item .testimonials__items .testimonials-item__message .testimonials-message__upper .message-upper__description {
@@ -1148,11 +1148,11 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
 
 @font-face {
   font-family: "Space Grotesk";
-  src: url("fonts/SpaceGrotesk-Regular.ttf");
+  src: url("../../fonts/SpaceGrotesk-Regular.ttf");
 }
 @font-face {
   font-family: "Space Grotesk-Variable";
-  src: url("fonts/SpaceGrotesk-Variable.ttf");
+  src: url("../../fonts/SpaceGrotesk-Variable.ttf");
 }
 @media (max-width: 480px) {
   body .wrapper {
@@ -1311,7 +1311,7 @@ main .team__content .team-content__block .team-content__item .team-content__uppe
     margin-bottom: 30px;
   }
   body .wrapper .testimonials-block__item .testimonials__items .testimonials-item__message .testimonials-message__upper {
-    background-image: url("/images/pics/mobile-union.svg");
+    background-image: url("../../images/pics/mobile-union.svg");
     width: 330px;
     height: 326px;
   }

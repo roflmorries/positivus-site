@@ -603,7 +603,7 @@ main {
         align-items: center;
         width: 37.87rem;
         height: 16.62rem;
-        background-image: url("/images/pics/Bubble.svg");
+        background-image: url("../../images/pics/Bubble.svg");
         @include border-radius;
         .message-upper__description {
           color: white;
