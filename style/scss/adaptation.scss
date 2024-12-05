@@ -3,10 +3,10 @@
 @include respond-to('mobile') {
   body {
     .wrapper {
-      width: 390px;
+      max-width: clamp(22.5rem, 100vw + 0rem, 24.375rem);
       margin: 0 auto;
       .header {
-        max-width: 390px;
+        max-width: clamp(22.5rem, 100vw + 0rem, 24.375rem);
       }
 
       .header__nav {
@@ -83,7 +83,7 @@
         flex-wrap: wrap;
       }
       .card_block__item {
-        max-width: 390px;
+        max-width: clamp(22.5rem, 100vw + 0rem, 24.375rem);
         .card_item__title {
           .card_title__item {
             width: 290px;
@@ -111,6 +111,8 @@
       }
       .contact__block {
         margin-bottom: 25px;
+        padding: 0;
+        justify-content: center;
         .contact-block__content {
           .contact-block__title {
             margin-top: 0;
@@ -129,7 +131,7 @@
         .case-content__item {
           background-color: $main-color2;
           height: 16rem;
-          width: 390px;
+          width: clamp(22.5rem, 100vw + 0rem, 24.375rem);
           display: flex;
           flex-direction: column;
           padding: 0 50px 0 50px;
@@ -172,6 +174,9 @@
           flex-wrap: wrap;
           flex-direction: column;
           width: auto;
+          .team-content__item {
+            width: auto;
+          }
         }
       }
       .team-block__button {
@@ -196,7 +201,6 @@
                 margin: 0;
                 padding-bottom: 30px;
                 line-height: 1.5;
-                outline: 5px red;
               }
             }
           }
@@ -208,9 +212,10 @@
       .feedback-block__container {
         height: 440px;
         padding-top: 130px;
+        justify-content: center;
         .feedback-block__item {
-          margin-left: 30px;
-          width: 330px;
+          margin-left: 0;
+          width: 80%;
           .feedback__radio-group {
             display: flex;
             justify-content: center;
@@ -219,8 +224,8 @@
           .feedback__form-button {
             position: relative;
             top: 30px;
-            left: -30px;
-            width: 390px;
+            left: -12.5%;
+            width: clamp(22.5rem, 100vw + 0rem, 24.375rem);
 
           }
           .feedback__input-group {
@@ -238,14 +243,17 @@
 
     }
     .footer__wrapper {
+      width: 100%;
+      margin: 0 auto;
       footer {
         border-radius: 0;
+        max-width: clamp(22.5rem, 100vw + 0rem, 30rem);
       }
       .footer__content {
-        width: 390px;
+        width: clamp(22.5rem, 100vw + 0rem, 24.375rem);
         .footer-nav__content {
           flex-direction: column;
-          width: 390px;
+          width: clamp(22.5rem, 100vw + 0rem, 24.375rem);
           gap: 37px;
           .footer__nav {
             ul {
@@ -261,10 +269,10 @@
         .footer__main-content {
           flex-direction: column;
           padding: 0;
-          max-width: 390px;
+          max-width: clamp(22.5rem, 100vw + 0rem, 24.375rem);
           justify-content: center;
           .footer_contact {
-            min-width: 390px;
+            min-width: clamp(22.5rem, 100vw + 0rem, 24.375rem);
             text-align: center;
             .footer-contact__title {
               background-color: $main-color2;
@@ -280,7 +288,7 @@
         }
       }
       .footer_contact-form {
-        max-width: 390px;
+        max-width: clamp(22.5rem, 100vw + 0rem, 24.375rem);
         margin-bottom: 2.31rem;
         min-height: 216px;
         margin-top: 32px;
@@ -570,20 +578,31 @@
       }
     }
     .header__nav {
-      width: auto;
+      display: none;
       ul {
-        gap: 20px;
-        .header__nav_item {
-          a {
-            font-size: clamp(1rem, 0.2596rem + 1.5385vw, 1.25rem);          }
-        }
-        .nav_item--modified {
-          width: clamp(9.375rem, 43.478vw - 12.364rem, 15.625rem);
-          height: clamp(2.813rem, 9.542vw - 1.768rem, 4.375rem);
+        display: none;
+      }
+    }
+    .header__logo {
+
+    }
+    .burger-header-navigation {
+      display: inline-flex;
+      .hamburger {
+        .header-navigation-menu {
+          width: 100vw;
+          left: -95vw;
+          .header__burger_button {
+            border: none;
+            padding: 0;
+            width: auto;
+            margin-left: 0;
+          }
         }
       }
     }
   }
+
   .features__block {
     .features-block__content {
       margin: 0 auto;
